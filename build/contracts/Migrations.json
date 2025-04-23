@@ -17,7 +17,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -30,7 +31,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -623,7 +625,7 @@
   "sourceMap": "60:328:1:-:0;;;157:51;;;;;;;;;-1:-1:-1;182:5:1;:18;;-1:-1:-1;;;;;;182:18:1;190:10;182:18;;;60:328;;;;;;",
   "deployedSourceMap": "60:328:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;87:20;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;114:34;;;:::i;:::-;;;;;;;:::i;216:169::-;;;;;;:::i;:::-;;:::i;:::-;;87:20;;;-1:-1:-1;;;;;87:20:1;;:::o;114:34::-;;;;:::o;216:169::-;294:5;;-1:-1:-1;;;;;294:5:1;280:10;:19;272:60;;;;-1:-1:-1;;;272:60:1;;;;;;;:::i;:::-;;;;;;;;;343:22;:34;216:169::o;14:190:2:-;;126:2;114:9;105:7;101:23;97:32;94:2;;;147:6;139;132:22;94:2;-1:-1:-1;175:23:2;;84:120;-1:-1:-1;84:120:2:o;209:203::-;-1:-1:-1;;;;;373:32:2;;;;355:51;;343:2;328:18;;310:102::o;417:352::-;619:2;601:21;;;658:2;638:18;;;631:30;697;692:2;677:18;;670:58;760:2;745:18;;591:178::o;774:177::-;920:25;;;908:2;893:18;;875:76::o",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract Migrations {\r\n    address public owner;\r\n    uint public lastCompletedMigration;\r\n\r\n    constructor() {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    function setCompleted(uint completed) public {\r\n        require(msg.sender == owner, \"Only owner can set completed\");\r\n        lastCompletedMigration = completed;\r\n    }\r\n}\r\n",
-  "sourcePath": "D:\\land-registry\\contracts\\Migrations.sol",
+  "sourcePath": "D:\\Land-Registry-System\\contracts\\Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -1041,12 +1043,13 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x8BEf96482DC9582c2FaC1d712e6cdA8af9e8722c",
-      "transactionHash": "0x960326a768870072ffce3eb70d4b6b5f0fe5117ae938e068ecd38bcb2c1e386a"
+      "address": "0x10dc6FF9a04D399168Eb619Dfc1eeE2BA35891C8",
+      "transactionHash": "0x3b7f5f126d7fa208c7cac95369b511a487ebfe26ed02eeb6d93e49d5889044a2"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2025-03-08T19:49:57.935Z",
+  "updatedAt": "2025-04-23T08:07:27.660Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

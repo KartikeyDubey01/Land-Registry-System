@@ -43,7 +43,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -77,7 +78,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -129,7 +131,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -142,7 +145,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"size\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"LandAdded\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"_size\",\"type\":\"uint256\"}],\"name\":\"addLand\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_id\",\"type\":\"uint256\"}],\"name\":\"getLand\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getLandCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"landCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"lands\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"size\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/LandRegistry.sol\":\"LandRegistry\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/LandRegistry.sol\":{\"keccak256\":\"0xac5fb6c2d6fa84037562df56c8f45d7967d763017ef5df252e3062573aa4a8be\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://265263f7b57295035b4c7270b07e289d53aa12ccab1148fbb0152b750a8bc930\",\"dweb:/ipfs/QmUp11Y7VBQjwaUfKTrK1oN6P1FJtZf3iAnRzajhHxJpG6\"]}},\"version\":1}",
@@ -2756,7 +2760,7 @@
   "sourceMap": "60:821:0:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "60:821:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;792:86;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;261:21;;;:::i;220:34::-;;;;;;:::i;:::-;;:::i;:::-;;;;;;;;;;:::i;363:220::-;;;;;;:::i;:::-;;:::i;:::-;;591:193;;;;;;:::i;:::-;;:::i;792:86::-;861:9;;792:86;:::o;261:21::-;;;;:::o;220:34::-;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;220:34:0;;;;;;;;;;;;-1:-1:-1;;;;;220:34:0;;-1:-1:-1;220:34:0;:::o;363:220::-;431:9;:11;;;:9;:11;;;:::i;:::-;;;;-1:-1:-1;;472:41:0;;;;;;;;477:9;;;472:41;;;;;;;;;;;;;;;;502:10;472:41;;;;-1:-1:-1;453:16:0;;;;;;;;;;:60;;;;;;;;472:41;;453:16;:60;;;;;;;;;;;:::i;:::-;-1:-1:-1;453:60:0;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;453:60:0;-1:-1:-1;;;;;453:60:0;;;;;;;;;-1:-1:-1;539:9:0;529:46;;;;;;550:5;;557;;564:10;;529:46;:::i;:::-;;;;;;;;363:220;;:::o;591:193::-;639:4;645:13;660:4;666:7;686:16;705:5;:10;711:3;705:10;;;;;;;;;;;686:29;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;686:29:0;;;-1:-1:-1;;686:29:0;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;686:29:0;;;;;;734:7;;743:9;;;;754;;;;765:10;;;;;734:7;;743:9;;-1:-1:-1;754:9:0;;-1:-1:-1;765:10:0;-1:-1:-1;591:193:0;-1:-1:-1;;;591:193:0:o;-1:-1:-1:-;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;14:1028:2;;;153:2;141:9;132:7;128:23;124:32;121:2;;;174:6;166;159:22;121:2;219:9;206:23;248:18;289:2;281:6;278:14;275:2;;;310:6;302;295:22;275:2;353:6;342:9;338:22;328:32;;398:7;391:4;387:2;383:13;379:27;369:2;;425:6;417;410:22;369:2;466;453:16;488:4;511:2;507;504:10;501:2;;;517:18;;:::i;:::-;566:2;560:9;635:2;616:13;;-1:-1:-1;;612:27:2;600:40;;596:49;;660:18;;;680:22;;;657:46;654:2;;;706:18;;:::i;:::-;742:2;735:22;766:18;;;803:11;;;799:20;;796:33;-1:-1:-1;793:2:2;;;847:6;839;832:22;793:2;908;903;899;895:11;890:2;882:6;878:15;865:46;931:15;;;927:24;;920:40;;;;935:6;1017:18;;;;1004:32;;-1:-1:-1;;;;111:931:2:o;1047:190::-;;1159:2;1147:9;1138:7;1134:23;1130:32;1127:2;;;1180:6;1172;1165:22;1127:2;-1:-1:-1;1208:23:2;;1117:120;-1:-1:-1;1117:120:2:o;1242:106::-;-1:-1:-1;;;;;1310:31:2;1298:44;;1288:60::o;1353:177::-;1499:25;;;1487:2;1472:18;;1454:76::o;1535:835::-;;1768:6;1757:9;1750:25;1794:2;1832:3;1827:2;1816:9;1812:18;1805:31;1865:6;1859:13;1909:6;1903:3;1892:9;1888:19;1881:35;1934:4;1947:141;1961:6;1958:1;1955:13;1947:141;;;2057:14;;;2053:23;;2047:30;2022:17;;;2041:3;2018:27;2011:67;1976:10;;1947:141;;;2106:6;2103:1;2100:13;2097:2;;;2177:4;2171:3;2162:6;2151:9;2147:22;2143:32;2136:46;2097:2;-1:-1:-1;2295:2:2;2280:18;;2273:34;;;2253:2;2232:15;-1:-1:-1;;2228:29:2;2213:45;;2260:3;2209:55;;-1:-1:-1;2316:48:2;;-1:-1:-1;2360:2:2;2345:18;;2337:6;2316:48;:::i;:::-;1740:630;;;;;;;:::o;2375:380::-;2460:1;2450:12;;2507:1;2497:12;;;2518:2;;2572:4;2564:6;2560:17;2550:27;;2518:2;2625;2617:6;2614:14;2594:18;2591:38;2588:2;;;2671:10;2666:3;2662:20;2659:1;2652:31;2706:4;2703:1;2696:15;2734:4;2731:1;2724:15;2588:2;;2430:325;;;:::o;2760:236::-;;-1:-1:-1;;2820:17:2;;2817:2;;;-1:-1:-1;;;2860:33:2;;2916:4;2913:1;2906:15;2946:4;2867:3;2934:17;2817:2;-1:-1:-1;2988:1:2;2977:13;;2807:189::o;3001:127::-;3062:10;3057:3;3053:20;3050:1;3043:31;3093:4;3090:1;3083:15;3117:4;3114:1;3107:15",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract LandRegistry {\r\n    struct Land {\r\n        uint id;\r\n        string name;\r\n        uint size; // Added land size\r\n        address owner;\r\n    }\r\n\r\n    mapping(uint => Land) public lands;\r\n    uint public landCount;\r\n\r\n    event LandAdded(uint id, string name, uint size, address owner);\r\n\r\n    function addLand(string memory _name, uint _size) public {\r\n        landCount++;\r\n        lands[landCount] = Land(landCount, _name, _size, msg.sender);\r\n        emit LandAdded(landCount, _name, _size, msg.sender);\r\n    }\r\n\r\n    function getLand(uint _id) public view returns (uint, string memory, uint, address) {\r\n        Land memory land = lands[_id];\r\n        return (land.id, land.name, land.size, land.owner);\r\n    }\r\n\r\n    function getLandCount() public view returns (uint) {\r\n        return landCount;\r\n    }\r\n}\r\n",
-  "sourcePath": "D:\\land-registry\\contracts\\LandRegistry.sol",
+  "sourcePath": "D:\\Land-Registry-System\\contracts\\LandRegistry.sol",
   "ast": {
     "absolutePath": "project:/contracts/LandRegistry.sol",
     "exportedSymbols": {
@@ -3979,12 +3983,13 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x2f9d17181281Bd44400f8F7df451049076A2b142",
-      "transactionHash": "0x911700170b39ddad19ec225eb83b021975c54db555c325fc8a1027c69bcbae9c"
+      "address": "0x33F75336C5A5d04296D9413669A0d73e98FbAb36",
+      "transactionHash": "0x39ed8bbd8c9a98183d9758eeb633b682fbf84e55140e3528ccc22658131a5945"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2025-03-08T19:49:57.933Z",
+  "updatedAt": "2025-04-23T08:07:27.651Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

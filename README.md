@@ -33,7 +33,7 @@ The core of this project is a Solidity smart contract that handles land registra
 ### Installation
 1. Clone the repository
    ```
-   git clone https://github.com/yourusername/land-registry.git
+   git clone https://github.com/KartikeyDubey01/Land-Registry-System.git
    cd land-registry
    ```
 
